@@ -5,6 +5,9 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+        echo 'Вы находитесь на сайте '.$_SERVER['HTTP_HOST'];
+    ?>
     <p>Числа фибоначи</p>
     <p>
         <?php
@@ -23,5 +26,26 @@
             echo("...\n")
         ?>
     </p>
+    <p>Факториал</p>
+    <p>
+        <?php
+        function factorial($n)
+        {
+            if ($n == 0) {
+                return 1;
+            } else {
+                return $n * factorial($n - 1);
+            }
+        }
+        for ($n = 0; $n <= 16; $n++) {
+            echo($n . "! = " . factorial($n) . "\n");
+        }
+        echo("...\n")
+        ?>
+    </p>
+
+
+
+
 </body>
 </html>
