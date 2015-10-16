@@ -26,23 +26,7 @@
             echo("...\n")
         ?>
     </p>
-    <p>Факториал</p>
-    <p>
-        <?php
-        function factorial($n)
-        {
-            if ($n == 0) {
-                return 1;
-            } else {
-                return $n * factorial($n - 1);
-            }
-        }
-        for ($n = 0; $n <= 16; $n++) {
-            echo($n . "! = " . factorial($n) . "\n");
-        }
-        echo("...\n")
-        ?>
-    </p>
+
 
 
 
